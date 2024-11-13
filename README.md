@@ -1,6 +1,6 @@
 # store-admin
 
-This is a Vue.js app that simulates a store admin portal where users can manually process orders, and manage products. It is meant to be used in conjunction with the [product-service](../product-service/) and [makeline-service](../makeline-service). If you have access to OpenAI or Azure OpenAI API keys, you can also deploy the  [ai-service](../ai-service) to help you generate product descriptions. You should also run the [virtual-customer](../virtual-customer) to simulate customers placing orders to have some order data to work with.
+This is a Vue.js app that simulates a store admin portal where users can manually process orders, and manage products. It is meant to be used in conjunction with the product-service and makeline-service.
 
 ## Running the app locally
 
@@ -14,10 +14,7 @@ This is a Vue.js app that simulates a store admin portal where users can manuall
 - [Azure OpenAI API Key](https://azure.microsoft.com/products/cognitive-services/openai-service/)
 
 ### Running the app
-
-The app relies on the [product-service](../product-service), [makeline-service](../order-service), and optionally the [ai-service](../ai-service) along with mongodb and rabbitmq instances running. A docker-compose file is provided to make this easy.
-
-To run the necessary services, clone the repo, open a terminal, and navigate to the `store-admin` directory.
+To run the necessary services, clone the repo, open a terminal, and navigate to the repo directory.
 
 If you have access to OpenAI or Azure OpenAI, open the `docker-compose.yml` file, uncomment the `ai-services` block, and add your OpenAI or Azure OpenAI credentials.
 
